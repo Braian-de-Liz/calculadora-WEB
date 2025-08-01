@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,46 +7,38 @@
     <link rel="shortcut icon" href="style/imagens/logo.fav.png" type="image/x-icon">
     <title>Calculadora WEB Braian</title>
 </head>
-
 <body>
-
     <section id="container">
         <main>
-
             <section id="Mostrar">
-                0
+                
             </section>
 
             <section id="botoes">
-                <button class="numbutao" id="7">7</button>
-                <button class="numbutao" id="8">8</button>
-                <button class="numbutao" id="9">9</button>
-                <button class="numbutao" id="/">÷</button>
+                <button class="numbutao" onclick="inserirNum1(7)" id="7">7</button>
+                <button class="numbutao" onclick="inserirNum1(8)" id="8">8</button>
+                <button class="numbutao" onclick="inserirNum1(9)" id="9">9</button>
+                <button class="numbutao" onclick="inserirNum1('/')" id="/">÷</button>
 
-                <button class="numbutao" id="4">4</button>
-                <button class="numbutao" id="5">5</button>
-                <button class="numbutao" id="6">6</button>
-                <button class="numbutao" id="*">×</button>
+                <button class="numbutao" onclick="inserirNum1(4)" id="4">4</button>
+                <button class="numbutao" onclick="inserirNum1(5)" id="5">5</button>
+                <button class="numbutao" onclick="inserirNum1(6)" id="6">6</button>
+                <button class="numbutao" onclick="inserirNum1('*')" id="*">×</button>
 
-                <button class="numbutao" id="1">1</button>
-                <button class="numbutao" id="2">2</button>
-                <button class="numbutao" id="3">3</button>
-                <button class="numbutao" id="-">−</button>
+                <button class="numbutao" onclick="inserirNum1(1)" id="1">1</button>
+                <button class="numbutao" onclick="inserirNum1(2)" id="2">2</button>
+                <button class="numbutao" onclick="inserirNum1(3)" id="3">3</button>
+                <button class="numbutao" onclick="inserirNum1('-')" id="-">−</button>
 
-                <button class="numbutao" id="0">0</button>
+                <button class="numbutao" onclick="inserirNum1(0)" id="0">0</button>
                 <button class="numbutao" id="C">C</button>
                 <button class="numbutao" id="=">=</button>
-                <button class="numbutao" id="+">+</button>
-                
-                <!-- <button class="numbutao" id=".">.</button> -->
-                 <div id="espacamento"></div>
+                <button class="numbutao" onclick="inserirNum1('+')" id="+">+</button>
+                <button class="numbutao" id="backstao"><=</button>
+                <div id="espacamento"></div>
             </section>
-
         </main>
     </section>
-
-
     <script src="scripts/scriptPrincipal.js"></script>
 </body>
-
 </html>
