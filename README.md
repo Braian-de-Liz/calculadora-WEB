@@ -1,4 +1,4 @@
-# 🧮 Calculadora Web — Projeto de Treino para Iniciantes
+# 🧮 Calculadora Web — Projeto de Treino para um Iniciante
 
 Este é um projeto simples de **calculadora online** desenvolvido como forma de **prática e aprendizado** para quem está iniciando na programação web.  
 
@@ -45,7 +45,7 @@ Foi uma forma de praticar o raciocínio lógico e o uso de funções em JavaScri
 
 ---
 
-## 📸 Imagem de exemplo (opcional)
+## 📸 Imagem de exemplo 
 
 <img src="/style/imagens/image.png">
 
