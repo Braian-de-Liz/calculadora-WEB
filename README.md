@@ -61,5 +61,5 @@ Foi uma forma de praticar o raciocínio lógico e o uso de funções em JavaScri
 
 ## ✨ Feito por
 
-Desenvolvido por **[Seu Nome ou Nick]**, estudante em formação e entusiasta de tecnologia.
+Desenvolvido por **[Braian de Liz da Silva]**, estudante em formação e entusiasta de tecnologia.
 
