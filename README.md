@@ -47,6 +47,7 @@ Foi uma forma de praticar o raciocínio lógico e o uso de funções em JavaScri
 
 ## 📸 Imagem de exemplo (opcional)
 
+<img src="/style/imagens/image.png">
 
 ---
 
