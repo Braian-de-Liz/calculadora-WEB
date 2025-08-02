@@ -117,13 +117,3 @@ igual.addEventListener("click", (Event) => {
 });
 
 
-
-
-/* function soma2() {
-    let num1 = +prompt("digiga o numero 1º");
-    let num2 = +prompt("digiga o numero 2º");
-
-    const resultadooo = num1 + num2;
-
-    alert(resultadooo);
-} */
