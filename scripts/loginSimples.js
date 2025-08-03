@@ -2,13 +2,9 @@ const login = document.getElementById("Login");
 const form_login = login.querySelector("#login__form");
 const form_input = login.querySelector(".login_input");
 
-const container = document.getElementById("container"); // agora o container representa a calculadora
+const container = document.getElementById("container"); 
+const boasVindas = document.getElementById("boas-vindas");
 
-const cores = ['blueviolet', 'cadetblue', 'brown', 'coral', 'cornflowerblue'];
-
-function corAleatoria() {
-    return cores[Math.floor(Math.random() * cores.length)];
-}
 
 const Usuario = {
     id: "",
@@ -21,7 +17,9 @@ const submitFunc = (e) => {
 
     Usuario.id = crypto.randomUUID();
     Usuario.nome = form_input.value;
-    Usuario.corUser = corAleatoria();
+
+    boasVindas.textContent = `Bem-vindo, ${Usuario.nome}!`;
+    boasVindas.style.display = "block";
 
     login.style.display = "none";
     container.style.display = "flex";
