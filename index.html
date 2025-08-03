@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,25 @@
     <link rel="shortcut icon" href="style/imagens/logo.fav.png" type="image/x-icon">
     <title>Calculadora WEB Braian</title>
 </head>
+
 <body>
-    <section id="container">
+
+
+    <section id="Login">
+        <h2>Login</h2>
+        <form action="" id="login__form">
+            <input type="text" class="login_input" name="nome" placeholder="Nome" required>
+
+            <button type="submit" class="login__button">Entrar</button>
+        </form>
+    </section>
+
+
+        <section id="container">        
+
         <main>
             <section id="Mostrar">
-                
+
             </section>
 
             <section id="botoes">
@@ -34,12 +49,15 @@
                 <button class="numbutao" id="C">C</button>
                 <button class="numbutao" id="=">=</button>
                 <button class="numbutao" onclick="inserirNum1('+')" id="+">+</button>
-                <button class="numbutao" id="backstao"><=</button>
-                <div id="espacamento"></div>
+                <!-- <button class="numbutao" id="backstao"><=</button> -->
+                <button class="numbutao backspace" id="backstao"><=</button>
+
             </section>
         </main>
     </section>
-    
+
     <script src="scripts/scriptPrincipal.js"></script>
+    <script src="scripts/loginSimples.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +7,74 @@
 }
 
 body {
-    background: linear-gradient(to left top, #2e3440, #3b4252, #4c566a, #463950);
+    background: linear-gradient(to left top, #0f2027, #203a43, #2c5364);
     min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* TELA DE LOGIN */
+#Login {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35), inset 0 0 0.5px rgba(255, 255, 255, 0.2);
+    z-index: 20;
+}
+
+#Login h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login_input {
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 15px;
+    color: black;
+}
+
+.login_input:focus {
+    outline: 2px solid #fff;
+}
+
+.login__button {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    color: #222;
+    transition: 0.3s;
+}
+
+.login__button:hover {
+    scale: 0.9;
+    background-color: beige;
+}
+
+/* CONTAINER (CALCULADORA) */
 
 #container {
     width: 75%;
@@ -23,7 +86,7 @@ body {
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
 }
@@ -46,7 +109,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin-bottom: 1.5rem;
-    
+
 }
 
 .numbutao {
@@ -62,7 +125,7 @@ body {
     transition: background 0.2s;
 }
 
-#espacamento{
+#espacamento {
     width: 100%;
     height: 20px;
 }
@@ -70,4 +133,21 @@ body {
 
 .numbutao:hover {
     background: rgba(255, 255, 255, 0.12);
+}
+
+#backstao.backspace {
+    grid-column: span 4;
+    background-color: #ff5252;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#backstao.backspace:hover {
+    background-color: #ff1744;
+}
+
+#espacamento {
+    width: 100%;
+    height: 20px;
 }
