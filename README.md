@@ -58,6 +58,10 @@ Foi uma forma de praticar o raciocínio lógico e o uso de funções em JavaScri
 3. Use os botões ou o teclado (`Backspace`) para testar os recursos.
 
 ---
+Acesse a Calculadora:
+
+https://braian-de-liz.github.io/calculadora-WEB/
+---
 
 ## ✨ Feito por
 
