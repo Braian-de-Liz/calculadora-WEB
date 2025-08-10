@@ -55,10 +55,24 @@ const igual = document.getElementById("=");
 LimpaResult.addEventListener("click", limpar);
 
 document.addEventListener("keydown", (event) => {
-    if (event.key === 'Backspace') {
+
+    const tecla = event.key;
+
+    if (tecla === 'Backspace') {
         apagar();
+    } 
+    else if (tecla === 'Enter') {
+        igual.click();
     }
+    else if(tecla === 'c'){
+        limpar();
+    }
+    else if (/^[0-9+\-*/().]$/.test(tecla)) {
+        MostrarRes.innerHTML += tecla;
+    }
+
 });
+
 
 
 LimparNum.addEventListener("click", apagar);
