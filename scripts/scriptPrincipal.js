@@ -22,13 +22,13 @@ function dividir(num1, num2) {
     return resultado;
 }
 
-function quadratizar(num1, num2) {
-    const resultado = Math.pow(num1, num2);
+function quadratizar(num1) {
+    const resultado = Math.pow(num1);
     return resultado;
 }
 
-function raiz(num1, num2) {
-    const resultado = Math.sqrt(num1, num2);
+function raiz(num1) {
+    const resultado = Math.sqrt(num1);
     return resultado;
 }
 
