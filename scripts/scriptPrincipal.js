@@ -22,6 +22,16 @@ function dividir(num1, num2) {
     return resultado;
 }
 
+function quadratizar(num1, num2) {
+    const resultado = Math.pow(num1, num2);
+    return resultado;
+}
+
+function raiz(num1, num2) {
+    const resultado = Math.sqrt(num1, num2);
+    return resultado;
+}
+
 const inserirNum1 = (num1) => {
     let numero = document.getElementById("Mostrar").innerHTML;
     document.getElementById("Mostrar").innerHTML = numero + num1;
@@ -60,12 +70,15 @@ document.addEventListener("keydown", (event) => {
 
     if (tecla === 'Backspace') {
         apagar();
-    } 
+
+    }
     else if (tecla === 'Enter') {
         igual.click();
+
     }
-    else if(tecla === 'c'){
+    else if (tecla === 'c') {
         limpar();
+
     }
     else if (/^[0-9+\-*/().]$/.test(tecla)) {
         MostrarRes.innerHTML += tecla;
@@ -87,8 +100,7 @@ igual.addEventListener("click", (Event) => {
             MostrarRes.innerHTML = resultado;
         }
 
-    }
-    else {
+    } else {
         const expressao = MostrarRes.innerHTML;
         let operador;
 
@@ -100,6 +112,10 @@ igual.addEventListener("click", (Event) => {
             operador = "*";
         } else if (expressao.includes("/")) {
             operador = "/";
+        } else if(expressao.includes("^")){
+            operador = "^";
+        } else if(expressao.includes("//")){
+            operador = "//";
         }
 
         const [a, b] = expressao.split(operador).map(Number);
@@ -124,6 +140,10 @@ igual.addEventListener("click", (Event) => {
             case "/":
                 resultado = dividir(a, b);
                 break;
+            case "^":
+                resultado = quadratizar(a, b);
+            case "//":
+                resultado = raiz(a, b);
         }
 
         MostrarRes.innerHTML = resultado;
