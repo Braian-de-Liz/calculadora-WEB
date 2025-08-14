@@ -22,8 +22,8 @@ function dividir(num1, num2) {
     return resultado;
 }
 
-function quadratizar(num1) {
-    const resultado = Math.pow(num1);
+function quadratizar(num1, num2) {
+    const resultado = Math.pow(num1, num2);
     return resultado;
 }
 
@@ -143,7 +143,7 @@ igual.addEventListener("click", (Event) => {
             case "^":
                 resultado = quadratizar(a, b);
             case "//":
-                resultado = raiz(a, b);
+                resultado = raiz(a);
         }
 
         MostrarRes.innerHTML = resultado;
